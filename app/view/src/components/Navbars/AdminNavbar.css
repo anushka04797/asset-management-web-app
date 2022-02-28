@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+.sidebar{
+    margin-top: 20px !important;
+    height: calc(100vh - 35px) !important;
+    background: linear-gradient(178.7deg, #0F3460 0%, #1A1A2E 98.89%) !important;
+    border-radius: 30px !important;
+    
+}
+.sidebar .logo:after, .off-canvas-sidebar .logo:after {
+width: 100px !important;
+left: 60px;
+}
+.logo-img{
+    text-align: center;
+}
+.logo-img>img{
+    width: 100px;
+}
+.logo-img.fish-logo{
+    height: 40px;
+    width: 80px !important;
+}
+.logo-normal{
+    text-align: center;
+    font-family: 'Play', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+color: #F7F7F7;
+}
+.dashboard-link{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0.3px;
+color: #30A8E4;
+text-transform: none;
+}
+.log-out-nav{
+    /* font-family: Proxima Nova; */
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+text-align: right;
+letter-spacing: 0.3px;
+color: #E84660;
+cursor: pointer !important;
+}
+.show-datetime{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 12px;
+    vertical-align: middle;
+   font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.3px;
+color: #F7F7F7;
+
+
+    
+}
+.show-date{
+    margin-right: 10px;
+    
+}
+.user-name-view{
+    margin-right: 8px;
+}
+.custom-logout{
+    cursor: pointer !important;
+}
+
+/*media query*/
+@media all and (min-width:300px) and (max-width:992px){
+    .log-out-nav {
+        display: none !important;
+    }
+}

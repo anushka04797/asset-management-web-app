@@ -1,0 +1,17 @@
+.table-search{
+    color:white !important;
+}
+.react-search-field-input{
+    color:white !important;
+    font-weight: bold !important;
+}
+
+.status-text-active{
+    color: #8ed08e !important;
+    font-weight: bold;
+}
+
+.status-text-inactive{
+    color: #e27070 !important;
+    font-weight: bold;
+}
