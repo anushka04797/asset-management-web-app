@@ -524,3 +524,7 @@ export const generate_graph_data_new = (data) => {
     console.log(result)
     return result
 }
+
+export function capitalizeFirstLetter(string="") {
+    return (string!=null && string.length>0) ? string.charAt(0).toUpperCase() + string.slice(1):''
+}
