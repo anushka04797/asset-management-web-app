@@ -45,18 +45,20 @@ const AssetDetailsModal = (props) => {
                     <span style={{ color: 'white', fontSize: '18px' }}>{capitalizeFirstLetter(props.asset.ast_name)} Details</span>
                 </ModalHeader>
                 <ModalBody className="custom-modal-design" >
-                    {assetDetails && assetDetails.map((item,idx)=>(<Accordion key={idx} expanded={expandedDevice == idx} onChange={handleDeviceAccordionChange(item)} sx={{backgroundColor:'info.main',color:'white'}}>
+                    {assetDetails && assetDetails.map((item,idx)=>(
+                    <Accordion key={idx} expanded={expandedDevice == item} onChange={handleDeviceAccordionChange(item)} sx={{backgroundColor:'info.main',color:'white'}}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1bh-content"
                             id="panel1bh-header"
+                            sx={{ backgroundColor:"#ffffff" }}
                         >
-                            <Typography sx={{ width: '33%', flexShrink: 0 }}>
-                                {item.ddev_name}
-                            </Typography>
-                            <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography>
+                            {/* <Typography sx={{ width: '33%', flexShrink: 0 }}>
+                                {item.dev_name}
+                            </Typography> */}
+                            <Typography>{item.dev_name}</Typography>
                         </AccordionSummary>
-                        <AccordionDetails>
+                        <AccordionDetails sx={{ backgroundColor:"#ffffff" }}>
                             <Typography>
                                 Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
                                 Aliquam eget maximus est, id dignissim quam.
@@ -67,7 +69,7 @@ const AssetDetailsModal = (props) => {
                 <ModalFooter>
                     <div className="modal-button-holder">
                         <Button className="mr-1" outline size="sm"
-                            onClick={() => { }}
+                            onClick={() => {window.print() }}
                         >
                             Print
                         </Button>

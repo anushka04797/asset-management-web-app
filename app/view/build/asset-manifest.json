@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.8f03f002.chunk.css",
-    "main.js": "./static/js/main.cba6d6de.chunk.js",
-    "main.js.map": "./static/js/main.cba6d6de.chunk.js.map",
+    "main.js": "./static/js/main.60f4e138.chunk.js",
+    "main.js.map": "./static/js/main.60f4e138.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.87fa51ff.js",
     "runtime-main.js.map": "./static/js/runtime-main.87fa51ff.js.map",
     "static/css/2.f8cba3be.chunk.css": "./static/css/2.f8cba3be.chunk.css",
@@ -12,7 +12,7 @@
     "static/css/2.f8cba3be.chunk.css.map": "./static/css/2.f8cba3be.chunk.css.map",
     "static/css/main.8f03f002.chunk.css.map": "./static/css/main.8f03f002.chunk.css.map",
     "static/js/2.31fe1e14.chunk.js.LICENSE.txt": "./static/js/2.31fe1e14.chunk.js.LICENSE.txt",
-    "static/js/main.cba6d6de.chunk.js.LICENSE.txt": "./static/js/main.cba6d6de.chunk.js.LICENSE.txt",
+    "static/js/main.60f4e138.chunk.js.LICENSE.txt": "./static/js/main.60f4e138.chunk.js.LICENSE.txt",
     "static/media/Calendar.9e6be7c8.svg": "./static/media/Calendar.9e6be7c8.svg",
     "static/media/Paper.b64c5f63.svg": "./static/media/Paper.b64c5f63.svg",
     "static/media/anime3.png": "./static/media/anime3.4438e506.png",
@@ -33,6 +33,6 @@
     "static/css/2.f8cba3be.chunk.css",
     "static/js/2.31fe1e14.chunk.js",
     "static/css/main.8f03f002.chunk.css",
-    "static/js/main.cba6d6de.chunk.js"
+    "static/js/main.60f4e138.chunk.js"
   ]
 }
