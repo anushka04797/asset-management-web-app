@@ -320,7 +320,7 @@
 }
 
 .modal-content {
-    background: linear-gradient(178.7deg, rgba(15, 52, 96, 0.8) 0%, rgba(26, 26, 46, 0.8) 98.89%) !important;
+    background: linear-gradient(178.7deg, rgba(15, 52, 96, 45) 0%, rgba(26, 26, 46, 45) 98.89%) !important;
 }
 
 /*MEDIA QUERY*/
