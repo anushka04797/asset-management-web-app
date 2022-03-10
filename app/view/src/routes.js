@@ -16,13 +16,13 @@ var routes = [
     component: Dashboard,
     layout: "/admin",
   },
-  {
-    path: "/profile",
-    name: "Profile",
-    icon:"tim-icons icon-single-02",
-    component: UserProfile,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/profile",
+  //   name: "Profile",
+  //   icon:"tim-icons icon-single-02",
+  //   component: UserProfile,
+  //   layout: "/admin",
+  // },
   // {
   //   path: "/users",
   //   name: "Settings",

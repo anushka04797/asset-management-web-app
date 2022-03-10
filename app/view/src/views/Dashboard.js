@@ -50,7 +50,7 @@ function Dashboard(props) {
   const dispatch = useDispatch()
   let location = useLocation()
   const [assets, setassets] = useState([])
-  
+  const [filtered_assets,setFilteredAssets]=useState([])
   
   function onEnter(value, event) {
     console.log(value);
@@ -59,13 +59,24 @@ function Dashboard(props) {
   }
   // const device_data_ref = React.forwardRef(null)
   {/**Code for writing table search */ }
+  function filterBy_AssetName_RiverName(value) {
+    return value.data.ast_name 
+  }
   function onChange(value, event) {
     //var str= document.getElementById("searchText").value;
     //alert() //+ {str});
     // var a= document.getElementById("searchText");
     // console.log(a)
-    console.log(value, event)
     setSearchText(value)
+    if(value.length>0){
+      console.log(value, event)
+      setFilteredAssets(filtered_assets.filter(asset=>String(asset.data.ast_name).toLowerCase().includes(String(value).toLowerCase()) || String(asset.data.ast_river?.riv_name).toLowerCase().includes(String(value).toLowerCase())))
+      // console.log(temp)
+    }
+    else{
+      
+      setFilteredAssets(assets)
+    }
   }
 
   const [showTaskForm, setShowTaskForm] = useState(false);
@@ -255,6 +266,7 @@ function Dashboard(props) {
           })
         })
         setassets(temp)
+        setFilteredAssets(temp)
     }).catch(error => console.log(error));
 
   }, []);
@@ -281,12 +293,12 @@ function Dashboard(props) {
           <Col lg="12" md="12">
             <Row>
               <Col>
-              <Typography variant="h4" component="div" mb={2} sx={{color:"white"}}>Ponds</Typography>
+              <Typography variant="h5" component="div" mb={2} sx={{color:"rgba(255, 255, 255, 0.7)"}}>List of Asset</Typography>
               </Col>
               <Col>
               <SearchField
                   className="table-search"
-                  placeholder='Search by Pond ID/Owner Name'
+                  placeholder='Search by asset/river'
                   onChange={onChange}
                 />
               </Col>
@@ -332,7 +344,7 @@ function Dashboard(props) {
                 color="rgba(255, 255, 255, 0.7)"
                 loading={assets.length === 0}
                 disableSelectionOnClick={true}
-                rows={assets}
+                rows={filtered_assets}
                 columns={columns}
                 pageSize={5}
                 rowsPerPageOptions={[5]}
