@@ -124,11 +124,11 @@ const AssetDetailsModal = forwardRef((props, ref) => {
                                             Status : {item.dev_status.dev_status_name}
                                         </Typography>
                                     </li>
-                                    <li>
+                                    {item.device_sensors.length > 0 && <li>
                                         <Typography sx={{ fontSize: "14px" }}>
                                             Sensors :
                                         </Typography>
-                                        {item.device_sensors.length > 0 && <ul>
+                                        <ul>
                                             {item.device_sensors.map((item, idx) => (
                                                 <li key={idx}>
                                                     <Typography sx={{ fontSize: "12px" }}>
@@ -136,8 +136,8 @@ const AssetDetailsModal = forwardRef((props, ref) => {
                                                     </Typography>
                                                 </li>
                                             ))}
-                                        </ul>}
-                                    </li>
+                                        </ul>
+                                    </li>}
                                 </ul>
 
                                 {/* <Typography>
